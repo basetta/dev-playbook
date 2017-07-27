@@ -17,6 +17,8 @@ dotfiles_files:
   - .tmux.conf
   - .tmux
   - .gitconfig
+  - bin
+  - .osx
 
 homebrew_installed_packages:
   # - ansible # Installed via Pip.

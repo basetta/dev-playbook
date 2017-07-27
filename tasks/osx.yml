@@ -1,0 +1,5 @@
+---
+
+- name: Run .osx dotfiles.
+  shell: "~/.osx --no-restart"
+  changed_when: false

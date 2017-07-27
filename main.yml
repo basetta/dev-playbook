@@ -10,6 +10,8 @@
       with_fileglob:
         - ../config.yml
       tags: ['always']
+    - include: tasks/oh-my-zsh.yml
+      tags: ['zsh']
 
   roles:
     - role: geerlingguy.homebrew
@@ -23,3 +25,7 @@
   
   tasks:
     - include: tasks/ansible-setup.yml
+
+    - include: tasks/osx.yml
+      when: configure_osx
+      tags: ['osx']
